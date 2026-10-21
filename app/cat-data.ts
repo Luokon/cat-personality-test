@@ -15,11 +15,11 @@ devon:{name:"德文卷毛猫",subtitle:"古灵精怪的灵感制造机",color:"#
 type Option={text:string;trait:Trait};
 const sets:Option[][]=[
 [{text:"窝进柔软角落慢慢整理心情",trait:"warm"},{text:"约朋友吃点好吃的",trait:"joy"},{text:"独自安静不被打扰",trait:"independent"},{text:"随机尝试一件新鲜事",trait:"curious"}],
-[{text:"先认真听，让对方被理解",trait:"warm"},{text:"想办法逗对方笑",trait:"joy"},{text:"给出可以执行的方案",trait:"action"},{text:"安静陪伴并留出空间",trait:"steady"}],
-[{text:"主动认识大家",trait:"social"},{text:"等交流自然发生",trait:"steady"},{text:"只和有趣的人深聊",trait:"independent"},{text:"探索现场的新鲜角落",trait:"curious"}],
-[{text:"马上切换方案继续推进",trait:"action"},{text:"也许会有意外惊喜",trait:"joy"},{text:"需要时间重新归位",trait:"steady"},{text:"刚好恢复一点自由",trait:"independent"}],
+[{text:"先认真听，让对方被理解",trait:"warm"},{text:"答应陪他把难关扛过去",trait:"loyal"},{text:"给出可以执行的方案",trait:"action"},{text:"安静陪伴并留出空间",trait:"steady"}],
+[{text:"主动认识大家",trait:"social"},{text:"等交流自然发生",trait:"steady"},{text:"只和有趣的人深聊",trait:"independent"},{text:"找个轻松话题让气氛热起来",trait:"joy"}],
+[{text:"马上切换方案继续推进",trait:"action"},{text:"先和相关的人沟通协调",trait:"social"},{text:"需要时间重新归位",trait:"steady"},{text:"刚好恢复一点自由",trait:"independent"}],
 [{text:"想被安慰和理解",trait:"warm"},{text:"想让气氛轻松起来",trait:"joy"},{text:"需要靠谱的人一起扛事",trait:"loyal"},{text:"想听一个没想过的新点子",trait:"curious"}],
-[{text:"拆成步骤立刻开始",trait:"action"},{text:"稳定地一点点完成",trait:"steady"},{text:"找独特切入点",trait:"curious"},{text:"拉上伙伴边说边想",trait:"social"}],
+[{text:"拆成步骤立刻开始",trait:"action"},{text:"先确认责任，答应就做到",trait:"loyal"},{text:"找独特切入点",trait:"curious"},{text:"拉上伙伴边说边想",trait:"social"}],
 ];
 const prompts=["难得空出一个下午，你最想？","朋友带着坏情绪来找你，你会？","走进陌生聚会，你通常？","计划突然被打乱，你的第一反应？","别人最常因为什么来找你？","面对重要任务，你自然的方式是？","亲密关系里你最看重？","聊天群里你更像哪种存在？","你的房间最像哪种气质？","遇到不公平的事，你更可能？","哪种赞美最让你开心？","旅行时你最在意什么？","被误解时，你通常先做什么？","一群人要做决定时，你更像？","理想的周末早晨是？","需要恢复能量时，你会？","你对规则的态度更接近？","发现很棒的东西，你第一反应？","生活有点无聊时，你会？","面对承诺，你通常？","什么场景最容易治愈你？","别人临时求助时，你会？","如果给人生加一种调味，你想要？","此刻最想成为怎样的猫？"];
 const rotate=(a:Option[],n:number)=>a.map((_,i)=>a[(i+n)%a.length]);
